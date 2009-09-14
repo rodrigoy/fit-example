@@ -4,7 +4,7 @@ PROJETO PROFIT
 
 Este é um exemplo de uso do FitNesse [http://fitnesse.org] para um sistema de emissão de ordens de compra e venda de ações.
 
-Para utilização, baixe o Maven2 [http://maven.apache.org/download.html]
+Para utilização, baixe o Maven2 [http://maven.apache.org/download.html]. Outras tecnologias utilizadas: Guice,  Warp-Persist e Hibernate EntityManager (JPA)
 
 Este exemplo já está pré-configurado para o Eclipse. Se você não usa o Maven, será necessário configurar a famosa variável M2_REPO para o repositório do Maven (no Linux /home/<<user>>/.M2/repository).
 

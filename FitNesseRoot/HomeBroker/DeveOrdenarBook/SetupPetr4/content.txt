@@ -1,0 +1,6 @@
+Vamos emitir algumas ordens PETR4:
+
+!|profit.test.EmitirOrdemDeCompraSetupTest|
+|papel |quantidade |valor|
+|PETR4 |65 |40.99|
+|PETR4 |25 |41.00|

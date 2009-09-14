@@ -2,21 +2,10 @@ Ordem de Compra - Book
 
 Esta história é utilizada para emitir ordens de compra de ações. Com a emissão da compra é formado o Book de Ofertas de Compra de cada papel, onde as ordens são ordenadas do maior para o menor valor.
 
-Este teste emite algumas ordens BBDC4:
+Este teste emite algumas ordens BBDC4 e PETR4, depois, confirma como deve estar o Book BBDC4:
 
 DeveOrdenarBook.SetupBddc4
 
+DeveOrdenarBook.SetupPetr4
+
 DeveOrdenarBook.VerificarBddc4
-
-Para complementar o teste, vamos emitir algumas ordens PETR4:
-
-!|profit.test.EmitirOrdemDeCompraSetupTest|
-|papel |quantidade |valor|
-|PETR4 |65 |40.99|
-|PETR4 |25 |41.00|
-
-O Book deve ser:
-!|profit.test.EmitirOrdemDeCompraArrayPETR4Test|
-|papel |quantidade |valor|
-|PETR4 |25 |41.00|
-|PETR4 |65 |40.99|

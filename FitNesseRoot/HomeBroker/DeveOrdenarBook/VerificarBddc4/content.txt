@@ -1,0 +1,7 @@
+O Book deve ser:
+!|profit.test.EmitirOrdemDeCompraBookTest|BBDC4|
+|papel |quantidade |valor|
+|BBDC4 |11|38.33|
+|BBDC4 |100 |35.67|
+|BBDC4 |300 |35.66|
+|BBDC4 |400 |33.66|

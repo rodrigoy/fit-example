@@ -1,0 +1,21 @@
+!3 !-fit:fit.FitServer-!
+|'''Date: '''|!-1:10:41 AM (BRT) on Sexta-feira, Setembro 11, 2009-!|
+|'''Command: '''|!-java -cp defaultPath fit.FitServer rodrigoy-laptop 8877 4-!|
+|'''Exit code: '''|!--1-!|
+|'''Time elapsed: '''|!--1.252642240174E9 seconds-!|
+----'''Standard Error:'''
+{{{Exception in thread "main" java.lang.NoClassDefFoundError: fit/FitServer
+Caused by: java.lang.ClassNotFoundException: fit.FitServer
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+Could not find the main class: fit.FitServer.  Program will exit.
+}}}----'''Internal Exception:'''
+{{{ java.lang.Exception: FitClient: external process terminated before a connection could be established.
+	fitnesse.components.CommandRunningFitClient$EarlyTerminationRunnable.run(CommandRunningFitClient.java:170)
+	java.lang.Thread.run(Thread.java:619)
+}}}

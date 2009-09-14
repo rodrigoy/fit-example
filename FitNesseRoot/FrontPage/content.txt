@@ -1,0 +1,13 @@
+!2 Projeto Profit
+Este projeto é um exemplo de utilização do FIT que possui exemplos de:
+
+-ColumnFixture
+-CalculateFixture
+-DoFixture
+-SetupFixture
+-ArrayFixture
+
+http://www.aspercom.com.br
+rodrigoy@aspercom.com.br
+
+HomeBroker

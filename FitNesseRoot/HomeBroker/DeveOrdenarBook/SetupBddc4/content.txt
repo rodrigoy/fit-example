@@ -1,0 +1,8 @@
+Primeiro, vamos emitir algumas ordens BBDC4:
+
+!|profit.test.EmitirOrdemDeCompraSetupTest|
+|papel |quantidade |valor|
+|BBDC4 |300 |35.66|
+|BBDC4 |400 |33.66|
+|BBDC4 |100 |35.67|
+|BBDC4 |11 |38.33|

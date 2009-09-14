@@ -1,0 +1,6 @@
+As ordens emitidas possuem taxas e corretagens baseadas no valor total da Ordem. As taxas são: Emolumentos da Bovespa e a taxa da CLBC.
+
+!|profit.test.TaxasDoTest|
+|Taxa da Bovespa|0.027|
+|Taxa da CLBC|0.008|
+|Quando o valor da Ordem for|2000|as taxas totalizam|70|

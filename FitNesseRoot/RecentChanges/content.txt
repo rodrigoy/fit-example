@@ -1,0 +1,17 @@
+|HomeBroker.DeveDividir||16:02:05 Dom, Set 13, 2009|
+|HomeBroker.DeveOrdenarBook.VerificarBddc4||24:53:12 Sáb, Set 12, 2009|
+|HomeBroker.DeveOrdenarBook.SetupBddc4||24:51:53 Sáb, Set 12, 2009|
+|HomeBroker||24:50:49 Sáb, Set 12, 2009|
+|FrontPage||09:15:31 Sex, Set 11, 2009|
+|ClassPath||09:14:36 Sex, Set 11, 2009|
+|HomeBroker.ClassPath||09:06:26 Sex, Set 11, 2009|
+|HomeBroker.DeveOrdenarBook||02:12:07 Sex, Set 11, 2009|
+|HomeBroker.DeveCalcularValorTotal||01:36:27 Sex, Set 11, 2009|
+|HomeBroker.DeveCalcularTaxas||01:32:14 Sex, Set 11, 2009|
+|CalculoTaxas||01:08:09 Sex, Set 11, 2009|
+|BookDeOrdens||24:25:02 Sex, Set 11, 2009|
+|CalculoValorTotal||22:53:16 Qui, Set 10, 2009|
+|ValorTotal||22:43:11 Qui, Set 10, 2009|
+|TestCalculoTaxas||22:06:48 Qui, Set 10, 2009|
+|TestDivisao||21:57:59 Qui, Set 10, 2009|
+|TestSample||21:55:30 Qui, Set 10, 2009|

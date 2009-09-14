@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<BODY>
+<H1>Ordem de Compra - Book</H1>
+
+<p>Esta história é utilizada para emitir ordens de compra de ações.
+Com a emissão da compra é formado o Book de Ofertas de Compra de cada
+papel, onde as ordens são ordenadas do maior para o menor valor.<br />
+<br />
+
+Primeiro, vamos emitir algumas ordens BBDC4:</p>
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249">
+		profit.test.EmitirOrdemDeCompraSetupTest</td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">300</td>
+		<td width="55">35.66</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">400</td>
+		<td width="55">33.66</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">100</td>
+		<td width="55">35.67</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">1100</td>
+		<td width="55">38.33</td>
+	</tr>
+</table>
+
+
+<p>O Book deve ser:</p>
+
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249">
+		profit.test.EmitirOrdemDeCompraArrayBBDC4Test</td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">1100</td>
+		<td width="55">38.33</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">100</td>
+		<td width="55">35.67</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">300</td>
+		<td width="55">35.66</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">400</td>
+		<td width="55">33.66</td>
+	</tr>
+</table>
+
+
+<p>Para complementar o teste, vamos emitir algumas ordens PETR4:</p>
+
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249">profit.test.EmitirOrdemDeCompraSetupTest</td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">65</td>
+		<td width="55">40.99</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">25</td>
+		<td width="55">41.00</td>
+	</tr>
+</table>
+
+
+<p>O Book deve ser:</p>
+
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249">
+		profit.test.EmitirOrdemDeCompraArrayPETR4Test</td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">25</td>
+		<td width="55">41.00</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">65</td>
+		<td width="55">40.99</td>
+	</tr>
+</table>
+</BODY>
+</HTML>

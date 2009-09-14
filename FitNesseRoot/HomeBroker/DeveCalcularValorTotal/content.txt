@@ -1,0 +1,6 @@
+O valor total da Ordem é o valor unitário do papel x quantidade comprada/vendida
+
+!|profit.test.CalculoValorTotalTest|
+|papel|tipo|quantidade|valor||valorTotal|
+|BBDC4|C|48|31.42||1508.16|
+|VALE5|V|30|64.00||1920|

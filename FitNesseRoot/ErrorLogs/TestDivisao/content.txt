@@ -1,0 +1,5 @@
+!3 !-fit:fit.FitServer-!
+|'''Date: '''|!-8:11:17 AM (BRT) on Sexta-feira, Setembro 11, 2009-!|
+|'''Command: '''|!-java -cp target/classes:target/test-classes:lib/fitnesse.jar fit.FitServer rodrigoy-laptop 8877 26-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-1.37 seconds-!|

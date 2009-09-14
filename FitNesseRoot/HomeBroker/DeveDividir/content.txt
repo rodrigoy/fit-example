@@ -1,0 +1,7 @@
+This will be a simple test.
+
+!|profit.test.DivisaoFixture|
+|dividendo|divisor|resultado()|
+|10|2|5|
+|15|2|7.5|
+|0|1000|0|

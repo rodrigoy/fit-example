@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<BODY>
+<H1>Ordem de Compra - Book</H1>
+
+<p>Esta história é utilizada para emitir ordens de compra de ações.
+Com a emissão da compra é formado o Book de Ofertas de Compra de cada
+papel, onde as ordens são ordenadas do maior para o menor valor.<br />
+<br />
+
+Primeiro, vamos emitir algumas ordens BBDC4:</p>
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249" class="error">
+		profit.test.EmitirOrdemDeCompraSetupTest<hr><pre><div class="fit_stacktrace">com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) profit.domain.OrdemRepository is annotated with com.google.inject.Singleton, but scope annotations are not supported for abstract types.
+ Bound at profit.domain.OrdemRepository.
+  at profit.domain.OrdemRepository.class(OrdemRepository.java:1)
+  while locating profit.domain.OrdemRepository
+    for field at profit.application.EmitirOrdemFacadeImpl.ordemRepository(EmitirOrdemFacadeImpl.java:10)
+  while locating profit.application.EmitirOrdemFacade
+
+1 error
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:758)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:717)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:767)
+	at profit.Registry.getEmitirOrdemFacade(Registry.java:28)
+	at profit.test.EmitirOrdemDeCompraSetupTest.<init>(EmitirOrdemDeCompraSetupTest.java:11)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at fit.FixtureClass.newInstance(FixtureClass.java:27)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:60)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:88)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:39)
+	at fit.Fixture.loadFixture(Fixture.java:147)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:138)
+	at fit.Fixture.doTables(Fixture.java:73)
+	at fit.FileRunner.process(FileRunner.java:32)
+	at fit.FileRunner.run(FileRunner.java:25)
+	at profit.test.TestsRunner.run(TestsRunner.java:16)
+	at profit.test.TestsRunner.main(TestsRunner.java:11)
+</div></pre></td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">300</td>
+		<td width="55">35.66</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">400</td>
+		<td width="55">33.66</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">100</td>
+		<td width="55">35.67</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">1100</td>
+		<td width="55">38.33</td>
+	</tr>
+</table>
+
+
+<p>O Book deve ser:</p>
+
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249" class="error">
+		profit.test.EmitirOrdemDeCompraArrayBBDC4Test<hr><pre><div class="fit_stacktrace">com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) profit.domain.OrdemRepository is annotated with com.google.inject.Singleton, but scope annotations are not supported for abstract types.
+ Bound at profit.domain.OrdemRepository.
+  at profit.domain.OrdemRepository.class(OrdemRepository.java:1)
+  while locating profit.domain.OrdemRepository
+    for field at profit.application.EmitirOrdemFacadeImpl.ordemRepository(EmitirOrdemFacadeImpl.java:10)
+  while locating profit.application.EmitirOrdemFacade
+
+1 error
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:758)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:717)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:767)
+	at profit.Registry.getEmitirOrdemFacade(Registry.java:28)
+	at profit.test.EmitirOrdemDeCompraArrayBBDC4Test.<init>(EmitirOrdemDeCompraArrayBBDC4Test.java:12)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at fit.FixtureClass.newInstance(FixtureClass.java:27)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:60)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:88)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:39)
+	at fit.Fixture.loadFixture(Fixture.java:147)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:138)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:122)
+	at fit.Fixture.doTables(Fixture.java:79)
+	at fit.FileRunner.process(FileRunner.java:32)
+	at fit.FileRunner.run(FileRunner.java:25)
+	at profit.test.TestsRunner.run(TestsRunner.java:16)
+	at profit.test.TestsRunner.main(TestsRunner.java:11)
+</div></pre></td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">1100</td>
+		<td width="55">38.33</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">100</td>
+		<td width="55">35.67</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">300</td>
+		<td width="55">35.66</td>
+	</tr>
+	<tr>
+		<td width="107">BBDC4</td>
+		<td width="138">400</td>
+		<td width="55">33.66</td>
+	</tr>
+</table>
+
+
+<p>Para complementar o teste, vamos emitir algumas ordens PETR4:</p>
+
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249" class="error">profit.test.EmitirOrdemDeCompraSetupTest<hr><pre><div class="fit_stacktrace">com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) profit.domain.OrdemRepository is annotated with com.google.inject.Singleton, but scope annotations are not supported for abstract types.
+ Bound at profit.domain.OrdemRepository.
+  at profit.domain.OrdemRepository.class(OrdemRepository.java:1)
+  while locating profit.domain.OrdemRepository
+    for field at profit.application.EmitirOrdemFacadeImpl.ordemRepository(EmitirOrdemFacadeImpl.java:10)
+  while locating profit.application.EmitirOrdemFacade
+
+1 error
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:758)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:717)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:767)
+	at profit.Registry.getEmitirOrdemFacade(Registry.java:28)
+	at profit.test.EmitirOrdemDeCompraSetupTest.<init>(EmitirOrdemDeCompraSetupTest.java:11)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at fit.FixtureClass.newInstance(FixtureClass.java:27)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:60)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:88)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:39)
+	at fit.Fixture.loadFixture(Fixture.java:147)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:138)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:122)
+	at fit.Fixture.doTables(Fixture.java:79)
+	at fit.FileRunner.process(FileRunner.java:32)
+	at fit.FileRunner.run(FileRunner.java:25)
+	at profit.test.TestsRunner.run(TestsRunner.java:16)
+	at profit.test.TestsRunner.main(TestsRunner.java:11)
+</div></pre></td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">65</td>
+		<td width="55">40.99</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">25</td>
+		<td width="55">41.00</td>
+	</tr>
+</table>
+
+
+<p>O Book deve ser:</p>
+
+<table border="1" cellpadding="0" cellspacing="2" width="435">
+	<tr>
+		<td colspan="3" width="249" class="error">
+		profit.test.EmitirOrdemDeCompraArrayPETR4Test<hr><pre><div class="fit_stacktrace">com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) profit.domain.OrdemRepository is annotated with com.google.inject.Singleton, but scope annotations are not supported for abstract types.
+ Bound at profit.domain.OrdemRepository.
+  at profit.domain.OrdemRepository.class(OrdemRepository.java:1)
+  while locating profit.domain.OrdemRepository
+    for field at profit.application.EmitirOrdemFacadeImpl.ordemRepository(EmitirOrdemFacadeImpl.java:10)
+  while locating profit.application.EmitirOrdemFacade
+
+1 error
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:758)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:717)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:767)
+	at profit.Registry.getEmitirOrdemFacade(Registry.java:28)
+	at profit.test.EmitirOrdemDeCompraArrayPETR4Test.<init>(EmitirOrdemDeCompraArrayPETR4Test.java:12)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at fit.FixtureClass.newInstance(FixtureClass.java:27)
+	at fit.FixtureLoader.instantiateFixture(FixtureLoader.java:60)
+	at fit.FixtureLoader.instantiateFirstValidFixtureClass(FixtureLoader.java:88)
+	at fit.FixtureLoader.disgraceThenLoad(FixtureLoader.java:39)
+	at fit.Fixture.loadFixture(Fixture.java:147)
+	at fit.Fixture.getLinkedFixtureWithArgs(Fixture.java:138)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:122)
+	at fit.Fixture.doTables(Fixture.java:79)
+	at fit.FileRunner.process(FileRunner.java:32)
+	at fit.FileRunner.run(FileRunner.java:25)
+	at profit.test.TestsRunner.run(TestsRunner.java:16)
+	at profit.test.TestsRunner.main(TestsRunner.java:11)
+</div></pre></td>
+	</tr>
+	<tr>
+		<td width="107">papel</td>
+		<td width="138">quantidade</td>
+		<td width="55">valor</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">25</td>
+		<td width="55">41.00</td>
+	</tr>
+	<tr>
+		<td width="107">PETR4</td>
+		<td width="138">65</td>
+		<td width="55">40.99</td>
+	</tr>
+</table>
+</BODY>
+</HTML>       

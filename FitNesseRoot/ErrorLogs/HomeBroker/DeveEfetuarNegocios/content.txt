@@ -1,0 +1,131 @@
+!3 !-fit:fit.FitServer-!
+|'''Date: '''|!-10:24:46 PM (BRT) on Segunda-feira, Setembro 14, 2009-!|
+|'''Command: '''|!-java -cp /home/rodrigoy/.m2/repository/javax/transaction/jta/1.0.1B/jta-1.0.1B.jar:/home/rodrigoy/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/home/rodrigoy/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/rodrigoy/.m2/repository/asm/asm/1.5.3/asm-1.5.3.jar:/home/rodrigoy/.m2/repository/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar:/home/rodrigoy/.m2/repository/cglib/cglib/2.1_3/cglib-2.1_3.jar:/home/rodrigoy/.m2/repository/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.jar:/home/rodrigoy/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/rodrigoy/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/rodrigoy/.m2/repository/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar:/home/rodrigoy/.m2/repository/org/hibernate/ejb3-persistence/1.0.1.GA/ejb3-persistence-1.0.1.GA.jar:/home/rodrigoy/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar:/home/rodrigoy/.m2/repository/org/fitnesse/fitnesse/20081201/fitnesse-20081201.jar:/home/rodrigoy/.m2/repository/com/google/code/guice/guice/1.0/guice-1.0.jar:/home/rodrigoy/.m2/repository/org/hibernate/hibernate/3.2.6.ga/hibernate-3.2.6.ga.jar:/home/rodrigoy/.m2/repository/org/hibernate/hibernate-annotations/3.3.1.GA/hibernate-annotations-3.3.1.GA.jar:/home/rodrigoy/.m2/repository/org/hibernate/hibernate-commons-annotations/3.0.0.ga/hibernate-commons-annotations-3.0.0.ga.jar:/home/rodrigoy/.m2/repository/org/hibernate/hibernate-entitymanager/3.3.2.GA/hibernate-entitymanager-3.3.2.GA.jar:/home/rodrigoy/.m2/repository/mysql/mysql-connector-java/5.0.7/mysql-connector-java-5.0.7.jar:/home/rodrigoy/.m2/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar:lib/warp-persist-1.0.1.jar:target/classes:target/test-classes fit.FitServer rodrigoy-laptop 8877 29-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-2.533 seconds-!|
+----'''Standard Output:'''
+{{{Hibernate: insert into Ordem (papel, quantidade, status, tipo, valor) values (?, ?, ?, ?, ?)
+Hibernate: select ordem0_.id as id0_, ordem0_.papel as papel0_, ordem0_.quantidade as quantidade0_, ordem0_.status as status0_, ordem0_.tipo as tipo0_, ordem0_.valor as valor0_ from Ordem ordem0_ where ordem0_.tipo=? and ordem0_.status=? and ordem0_.papel=? order by ordem0_.valor asc
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: insert into Ordem (papel, quantidade, status, tipo, valor) values (?, ?, ?, ?, ?)
+Hibernate: select ordem0_.id as id0_, ordem0_.papel as papel0_, ordem0_.quantidade as quantidade0_, ordem0_.status as status0_, ordem0_.tipo as tipo0_, ordem0_.valor as valor0_ from Ordem ordem0_ where ordem0_.tipo=? and ordem0_.status=? and ordem0_.papel=? order by ordem0_.valor asc
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: insert into Ordem (papel, quantidade, status, tipo, valor) values (?, ?, ?, ?, ?)
+Hibernate: select ordem0_.id as id0_, ordem0_.papel as papel0_, ordem0_.quantidade as quantidade0_, ordem0_.status as status0_, ordem0_.tipo as tipo0_, ordem0_.valor as valor0_ from Ordem ordem0_ where ordem0_.tipo=? and ordem0_.status=? and ordem0_.papel=? order by ordem0_.valor asc
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: insert into Ordem (papel, quantidade, status, tipo, valor) values (?, ?, ?, ?, ?)
+Hibernate: select ordem0_.id as id0_, ordem0_.papel as papel0_, ordem0_.quantidade as quantidade0_, ordem0_.status as status0_, ordem0_.tipo as tipo0_, ordem0_.valor as valor0_ from Ordem ordem0_ where ordem0_.tipo=? and ordem0_.status=? and ordem0_.papel=? order by ordem0_.valor asc
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: insert into Ordem (papel, quantidade, status, tipo, valor) values (?, ?, ?, ?, ?)
+Hibernate: select ordem0_.id as id0_, ordem0_.papel as papel0_, ordem0_.quantidade as quantidade0_, ordem0_.status as status0_, ordem0_.tipo as tipo0_, ordem0_.valor as valor0_ from Ordem ordem0_ where ordem0_.tipo=? and ordem0_.status=? and ordem0_.papel=? order by ordem0_.valor desc
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: insert into Ordem (papel, quantidade, status, tipo, valor) values (?, ?, ?, ?, ?)
+Hibernate: select ordem0_.id as id0_, ordem0_.papel as papel0_, ordem0_.quantidade as quantidade0_, ordem0_.status as status0_, ordem0_.tipo as tipo0_, ordem0_.valor as valor0_ from Ordem ordem0_ where ordem0_.tipo=? and ordem0_.status=? and ordem0_.papel=? order by ordem0_.valor desc
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: insert into Ordem (papel, quantidade, status, tipo, valor) values (?, ?, ?, ?, ?)
+Hibernate: select ordem0_.id as id0_, ordem0_.papel as papel0_, ordem0_.quantidade as quantidade0_, ordem0_.status as status0_, ordem0_.tipo as tipo0_, ordem0_.valor as valor0_ from Ordem ordem0_ where ordem0_.tipo=? and ordem0_.status=? and ordem0_.papel=? order by ordem0_.valor desc
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+Hibernate: update Ordem set papel=?, quantidade=?, status=?, tipo=?, valor=? where id=?
+}}}----'''Standard Error:'''
+{{{14/09/2009 22:24:45 org.hibernate.cfg.annotations.Version <clinit>
+INFO: Hibernate Annotations 3.3.1.GA
+14/09/2009 22:24:45 org.hibernate.cfg.Environment <clinit>
+INFO: Hibernate 3.2.6
+14/09/2009 22:24:45 org.hibernate.cfg.Environment <clinit>
+INFO: hibernate.properties not found
+14/09/2009 22:24:45 org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: Bytecode provider name : cglib
+14/09/2009 22:24:45 org.hibernate.cfg.Environment <clinit>
+INFO: using JDK 1.4 java.sql.Timestamp handling
+14/09/2009 22:24:45 org.hibernate.ejb.Version <clinit>
+INFO: Hibernate EntityManager 3.3.2.GA
+14/09/2009 22:24:45 org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: profit.domain.Ordem
+14/09/2009 22:24:45 org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity profit.domain.Ordem on table Ordem
+14/09/2009 22:24:45 org.hibernate.cfg.AnnotationConfiguration secondPassCompile
+INFO: Hibernate Validator not found: ignoring
+14/09/2009 22:24:45 org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Using Hibernate built-in connection pool (not for production use!)
+14/09/2009 22:24:45 org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Hibernate connection pool size: 20
+14/09/2009 22:24:45 org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: autocommit mode: true
+14/09/2009 22:24:45 org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/profit_dev
+14/09/2009 22:24:45 org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: MySQL, version: 5.0.75-0ubuntu10.2
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.7 ( $Date: 2007-03-09 22:13:57 +0100 (Fri, 09 Mar 2007) $, $Revision: 6341 $ )
+14/09/2009 22:24:46 org.hibernate.dialect.Dialect <init>
+INFO: Using dialect: org.hibernate.dialect.MySQLDialect
+14/09/2009 22:24:46 org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+14/09/2009 22:24:46 org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch size: 15
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch updates for versioned data: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): enabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Maximum outer join fetch depth: 2
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+14/09/2009 22:24:46 org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+INFO: Using ASTQueryTranslatorFactory
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: enabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.HashtableCacheProvider
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Echoing all SQL to stdout
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+14/09/2009 22:24:46 org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+14/09/2009 22:24:46 org.hibernate.impl.SessionFactoryImpl <init>
+INFO: building session factory
+14/09/2009 22:24:46 org.hibernate.impl.SessionFactoryObjectFactory addInstance
+INFO: Not binding factory to JNDI, no JNDI name configured
+14/09/2009 22:24:46 org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: Running hbm2ddl schema export
+14/09/2009 22:24:46 org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: exporting generated schema to database
+14/09/2009 22:24:46 org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: schema export complete
+}}}

@@ -2,6 +2,8 @@ package profit;
 
 import profit.application.EmitirOrdemFacade;
 import profit.application.EmitirOrdemFacadeImpl;
+import profit.domain.EmissorDeOrdens;
+import profit.domain.EmissorDeOrdensImpl;
 import profit.domain.OrdemRepository;
 import profit.domain.OrdemRepositoryImpl;
 
@@ -45,7 +47,8 @@ public class Registry {
 //			bind(EntityManager.class).toInstance(em);
 			bindConstant().annotatedWith(JpaUnit.class).to("default");
 			bind(EmitirOrdemFacade.class).to(EmitirOrdemFacadeImpl.class);
-			bind(OrdemRepository.class).to(OrdemRepositoryImpl.class);			
+			bind(OrdemRepository.class).to(OrdemRepositoryImpl.class);
+			bind(EmissorDeOrdens.class).to(EmissorDeOrdensImpl.class);
 		}
 		
 	}

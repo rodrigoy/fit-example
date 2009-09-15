@@ -20,10 +20,14 @@ public class OrdemRepositoryImpl implements OrdemRepository {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public List<Ordem> getBookCompras (String papel) {
+	public List<Ordem> getBook (String papel, TipoOrdem tipo) {
 		
-		return provider.get().createQuery("from Ordem where tipo = 'C' and papel = :papel order by valor desc")
+		return provider.get().createQuery("from Ordem where tipo = :tipo" +
+				" and status = :status" +
+				" and papel = :papel order by valor " +  tipo.order())
 			.setParameter("papel", papel)
+			.setParameter("status", StatusOrdem.Processada)
+			.setParameter("tipo", tipo)
 			.getResultList();
 
 	}

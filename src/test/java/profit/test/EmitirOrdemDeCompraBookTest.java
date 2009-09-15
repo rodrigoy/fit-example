@@ -5,6 +5,7 @@ import java.util.List;
 import profit.Registry;
 import profit.application.EmitirOrdemFacade;
 import profit.domain.Ordem;
+import profit.domain.TipoOrdem;
 import fitlibrary.ArrayFixture;
 
 public class EmitirOrdemDeCompraBookTest extends ArrayFixture {
@@ -14,7 +15,7 @@ public class EmitirOrdemDeCompraBookTest extends ArrayFixture {
 	public EmitirOrdemDeCompraBookTest() throws Exception {
 		super();
 		String papel = "BBDC4";
-		List<Ordem> set = facade.getBook(papel);
+		List<Ordem> set = facade.getBook(papel, TipoOrdem.C);
 		setActualCollection(set);
 	}
 	

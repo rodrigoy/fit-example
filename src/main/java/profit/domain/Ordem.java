@@ -30,6 +30,8 @@ public class Ordem implements Comparable<Ordem> {
 	@Enumerated(EnumType.STRING)
 	TipoOrdem tipo = TipoOrdem.C;
 	
+	StatusOrdem status = StatusOrdem.EmAberto;
+	
 	public Ordem() {}
 	
 	public Ordem(String papel, Long quantidade, Double valor, TipoOrdem tipo) {
@@ -43,12 +45,20 @@ public class Ordem implements Comparable<Ordem> {
 		return papel;
 	}
 	
+	public Long getQuantidade() {
+		return quantidade;
+	}
+
 	public Double getValor() {
 		return valor;
 	}
 
 	public Double getValorTotal() {
 		return quantidade * valor;
+	}
+
+	public StatusOrdem getStatus() {
+		return status;
 	}
 
 	public int compareTo(Ordem comp) {
@@ -64,6 +74,14 @@ public class Ordem implements Comparable<Ordem> {
 		Double clbc = Registry.getTaxaCLBC();
 		Double taxaTotal = bovespa + clbc;
 		return getValorTotal() * taxaTotal;
+	}
+
+	public void executar() {
+		status = StatusOrdem.Executada;		
+	}
+
+	public void processar() {
+		status = StatusOrdem.Processada;
 	}
 
 }

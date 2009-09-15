@@ -51,7 +51,7 @@ public class EmitirOrdemDeCompraBookUnitTest {
 	@Test
 	public void verificarBook () {
 		
-		List<Ordem> book = facade.getBook("BBDC4");
+		List<Ordem> book = facade.getBook("BBDC4", TipoOrdem.C);
 		
 		// A ordem do Book deve ser esta, independente da quantidade
 		Assert.assertEquals(new Double(41), book.get(0).getValor());

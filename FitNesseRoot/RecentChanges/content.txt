@@ -1,4 +1,7 @@
-|HomeBroker||17:47:04 Seg, Set 14, 2009|
+|HomeBroker||24:36:51 Ter, Set 15, 2009|
+|HomeBroker.DeveEfetuarNegocios.EmitirOrdemVendas||22:18:45 Seg, Set 14, 2009|
+|HomeBroker.DeveEfetuarNegocios.EmitirComprasBddc4||22:18:14 Seg, Set 14, 2009|
+|HomeBroker.DeveEfetuarNegocios||18:14:34 Seg, Set 14, 2009|
 |HomeBroker.DeveOrdenarBook.SetupPetr4||17:14:50 Seg, Set 14, 2009|
 |HomeBroker.DeveOrdenarBook||17:14:23 Seg, Set 14, 2009|
 |HomeBroker.DeveDividir||16:02:05 Dom, Set 13, 2009|

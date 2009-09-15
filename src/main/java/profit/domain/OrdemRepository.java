@@ -9,6 +9,6 @@ public interface OrdemRepository {
 
 	public void add(Ordem ordem);
 	
-	public List<Ordem> getBookCompras (String papel);
+	public List<Ordem> getBook (String papel, TipoOrdem tipo);
 	
 }
